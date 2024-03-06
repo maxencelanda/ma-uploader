@@ -12,9 +12,7 @@
         <p class="font-semibold text-3xl pt-5">EPSILON</p>
         <p>Plateforme de peer-learning</p>
         <p>EPSI Lille</p>
-        <div class="max-w-44 mx-auto rounded-full overflow-hidden my-5">
-            <img src="./assets/maxenss.webp"/>
-        </div>
+        <img src="./assets/maxenss.webp" class="w-[8.5rem] h-32 mx-auto rounded-full my-5"/>
         <p>Maxence LANDA</p>
         <a href="./form.php" class="underline">Upload your file !</a>
     </div>
