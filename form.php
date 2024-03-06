@@ -6,9 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post">
-        <input type="file"/>
-        <button type="submit">Upload</button>
+    <form method="post" action="form.php" enctype="multipart/form-data">
+        <input type="file" name="uploadedFile" action="form.php"/>
+        <button type="submit" name="submit">Upload</button>
     </form>
 </body>
 </html>
+
+<?php
+
+if (isset($_POST["submit"])){
+    $targetDirectory = "./uploadedFiles/";
+    $fileToUpload = $_FILES["uploadedFile"];
+    $fileDirectory = $targetDirectory . basename($fileToUpload["name"]);
+    move_uploaded_file($fileToUpload["tmp_name"], $fileDirectory);
+}
+
+?>
