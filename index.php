@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body class="bg-gradient-to-b from-fuchsia-300 to-violet-400">
+<body class="bg-no-repeat min-h-[100vh] bg-gradient-to-b from-fuchsia-300 to-violet-400">
     <div class="w-1/4 mx-auto mt-32 bg-gradient-to-b from-white text-center rounded-lg">
         <p class="font-semibold text-3xl pt-5">EPSILON</p>
         <p>Plateforme de peer-learning</p>
