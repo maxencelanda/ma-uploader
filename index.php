@@ -12,7 +12,7 @@
         <p class="font-semibold text-3xl pt-5">EPSILON</p>
         <p>Plateforme de peer-learning</p>
         <p>EPSI Lille</p>
-        <div class="max-w-44 max-h-88 mx-auto rounded-full overflow-hidden my-5">
+        <div class="max-w-44 mx-auto rounded-full overflow-hidden my-5">
             <img src="./assets/maxenss.webp"/>
         </div>
         <p>Maxence LANDA</p>
