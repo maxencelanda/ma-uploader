@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>EPSILON - Upload</title>
 </head>
-<?php include "./header.php" ?>
-        <form method="post" action="form.php" enctype="multipart/form-data">
+    <?php include "./header.php" ?>
+        <form method="post" action="form.php" enctype="multipart/form-data" class="my-5">
             <input type="file" name="uploadedFile" action="form.php"/>
             <button type="submit" name="submit" class="underline">Upload</button>
         </form>
@@ -25,7 +25,6 @@ if (isset($_POST["submit"])){
     $fileDirectory = $targetDirectory . $fileName;
     $fileExtension = substr($fileName, strpos($fileName, "."), strlen($fileName)-1);
     $extensions_allowed = [".pdf", ".png", ".jpg", ".webp"];
-    var_dump(in_array($fileExtension, $extensions_allowed));
 
     if (in_array($fileExtension, $extensions_allowed)){
         if (move_uploaded_file($fileToUpload["tmp_name"], $fileDirectory)){
