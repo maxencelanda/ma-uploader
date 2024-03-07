@@ -21,12 +21,13 @@
 <?php
 
 if (isset($_POST["submit"])){
+    
     $targetDirectory = "./uploadedFiles/";
     $fileToUpload = $_FILES["uploadedFile"];
     $fileName = basename($fileToUpload["name"]);
     $fileDirectory = $targetDirectory . $fileName;
     $fileExtension = substr($fileName, strpos($fileName, "."), strlen($fileName)-1);
-    $extensions_allowed = [".pdf", ".png", ".jpg", ".webp"];
+    $extensionsAllowed = [".pdf", ".png", ".jpg", ".webp"];
 
     if (in_array($fileExtension, $extensions_allowed)){
         if (move_uploaded_file($fileToUpload["tmp_name"], $fileDirectory)){
