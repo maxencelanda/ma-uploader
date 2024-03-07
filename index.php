@@ -8,7 +8,6 @@
     <?php include "./header.php" ?>
     <title>EPSILON - Accueil</title>
 </head>
-<body class="bg-no-repeat min-h-[100vh] bg-gradient-to-b from-fuchsia-300 to-violet-400">
     <?php include "./header.php" ?>
         <a href="./form.php" class="underline">Upload your file !</a>
     </div>
