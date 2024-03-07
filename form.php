@@ -21,7 +21,7 @@
 <?php
 
 if (isset($_POST["submit"])){
-    
+
     $targetDirectory = "./uploadedFiles/";
     $fileToUpload = $_FILES["uploadedFile"];
     $fileName = basename($fileToUpload["name"]);
@@ -29,7 +29,9 @@ if (isset($_POST["submit"])){
     $fileExtension = substr($fileName, strpos($fileName, "."), strlen($fileName)-1);
     $extensionsAllowed = [".pdf", ".png", ".jpg", ".webp"];
 
+    // condition 1: vérifier si l'extension du fichier est autorisé
     if (in_array($fileExtension, $extensions_allowed)){
+        // condition 2: le fichier a bien été uploadé dans son dossier
         if (move_uploaded_file($fileToUpload["tmp_name"], $fileDirectory)){
             echo "<p class='text-center'>Fichier uploadé avec succès.</p>";
         } else {
