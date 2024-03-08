@@ -1,0 +1,1 @@
+<footer style="text-align: center; color: green">Copyright 2024 © Epsi Lille</footer>
