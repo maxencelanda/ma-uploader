@@ -24,4 +24,4 @@
         <div style="text-align: center">
             <p>kateb Reda</p>
             <p>Groupe: Reda, Maxence, Jordan</p>
-            <p>14: 2 pages de styles differents pour les mêmes modifications, structure non claire</p>
+            <p>13: 2 pages de styles differents pour les mêmes modifications, structure non claire</p>
