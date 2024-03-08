@@ -24,6 +24,7 @@
                   </div>
                   <div> Jordan Rondelli</div>
                   <div> Maxence LANDA, Reda Khouya</div>
+                  <div>modification pas tres simplifie mais correct: 18</div>
                </div>
 
                <p><a href="pages/uploadPage.php">Upload your file !</a></p>
